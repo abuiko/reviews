@@ -12,3 +12,93 @@ body {
     margin: 0;
     padding: 0;
 }
+
+img {
+    width: 200px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.title {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 2.5rem;
+    color: rgb(36, 2, 36);
+    margin-bottom: 1rem;
+
+}
+
+.underline {
+    width: 100px;
+    height: 2px;
+    background: rgb(67, 5, 70);
+    margin: auto;
+}
+
+.reviews {
+    width: 500px;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 2px 5px 14px 3px rgb(197, 197, 197);
+}
+
+#author {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: rgb(67, 5, 70);
+}
+
+#job {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+
+}
+
+#info {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 25px;
+}
+
+.button-container {
+    margin-bottom: 2rem;
+}
+
+.prev-btn {
+    border: none;
+    background: transparent;
+    color: rgb(67, 5, 70);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.random-btn {
+    border: none;
+    background-color: transparent;
+    border: 1px solid rgb(67, 5, 70);
+    border-radius: 10px;
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+    color: rgb(67, 5, 70);
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+
+}
+
+.random-btn:hover {
+    background: rgb(36, 2, 36);
+    color: white;
+}
