@@ -20,3 +20,12 @@ const reviews = [{
         text: "Some text about Selena Jefferson here",
     }
 ]
+
+const image = document.getElementById('person-img');
+const name = document.getElementById('author');
+const title = document.getElementById('job');
+const info = document.getElementById('info');
+
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+const randomBtn = document.querySelector('.random-btn')
