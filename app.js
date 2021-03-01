@@ -41,16 +41,20 @@ function showPerson(person) {
     author.textContent = item.name;
     job.textContent = item.job;
     info.textContent = item.text;
-
-
 }
 
 nextBtn.addEventListener('click', () => {
     currentItem++;
+    if (currentItem > reviews.length - 1) {
+        currentItem = 0;
+    }
     showPerson(currentItem);
 });
 
 prevBtn.addEventListener('click', () => {
     currentItem--;
+    if (currentItem < 0) {
+        currentItem = reviews.length - 1;
+    }
     showPerson(currentItem);
 })
