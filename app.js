@@ -2,14 +2,14 @@ const reviews = [{
         id: 1,
         name: "David Kirk",
         job: "UX Designer",
-        img: "/img/person1.png",
+        img: "url('/img/person1.png')",
         text: "Some text about David Kirk here",
     },
     {
         id: 2,
         name: "Tomas Lewis",
         job: "Web Developer",
-        img: "/img/person3.png",
+        img: "url('/img/person3.png')",
         text: "Some text about Tomas Lewis here",
     },
     {
@@ -22,10 +22,23 @@ const reviews = [{
 ]
 
 const image = document.getElementById('person-img');
-const name = document.getElementById('author');
-const title = document.getElementById('job');
+const author = document.getElementById('author');
+const job = document.getElementById('job');
 const info = document.getElementById('info');
 
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
-const randomBtn = document.querySelector('.random-btn')
+const randomBtn = document.querySelector('.random-btn');
+
+let currentItem = 1;
+
+window.addEventListener("DOMContentLoaded", () => {
+    showPerson(currentItem);
+})
+
+function showPerson(person) {
+    const item = reviews[person];
+    author.textContent = item.name;
+    job.textContent = item.job;
+    info.textContent = item.text;
+}

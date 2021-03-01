@@ -77,7 +77,8 @@ h2 {
     margin-bottom: 2rem;
 }
 
-.prev-btn {
+.prev-btn,
+.next-btn {
     border: none;
     background: transparent;
     color: rgb(67, 5, 70);
