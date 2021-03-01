@@ -30,7 +30,7 @@ const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 const randomBtn = document.querySelector('.random-btn');
 
-let currentItem = 1;
+let currentItem = 0;
 
 window.addEventListener("DOMContentLoaded", () => {
     showPerson(currentItem);
@@ -41,4 +41,16 @@ function showPerson(person) {
     author.textContent = item.name;
     job.textContent = item.job;
     info.textContent = item.text;
+
+
 }
+
+nextBtn.addEventListener('click', () => {
+    currentItem++;
+    showPerson(currentItem);
+});
+
+prevBtn.addEventListener('click', () => {
+    currentItem--;
+    showPerson(currentItem);
+})
