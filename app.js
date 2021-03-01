@@ -43,6 +43,10 @@ function showPerson(person) {
     info.textContent = item.text;
 }
 
+function generateNumber() {
+    return Math.floor(Math.random() * reviews.length);
+}
+
 nextBtn.addEventListener('click', () => {
     currentItem++;
     if (currentItem > reviews.length - 1) {
@@ -57,4 +61,9 @@ prevBtn.addEventListener('click', () => {
         currentItem = reviews.length - 1;
     }
     showPerson(currentItem);
+})
+
+randomBtn.addEventListener('click', () => {
+    const random = generateNumber();
+    showPerson(random);
 })
